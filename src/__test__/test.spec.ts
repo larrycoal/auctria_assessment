@@ -1,5 +1,5 @@
 import { mount } from "@vue/test-utils";
-import { describe, it, expect, beforeEach, test } from "vitest";
+import {  expect, test } from "vitest";
 import {createStore} from "vuex";
 import App from "../App.vue";
 import Home from "../Views/Home.vue";
@@ -83,7 +83,6 @@ test("Add to cart works", async() => {
       plugins: [store],
     },
   });
-  console.log()
   await wrapper.find(".add_to_cart").trigger('click')
   expect(store.state.cart.length).toBeGreaterThan(0);
 });

@@ -1,0 +1,11 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Home > should render correctly 1`] = `
+"<div data-v-f13b4d11="" class="flex p-2 text-xl text-center bg-slate-900 text-gray-50 nav">
+  <h2 data-v-f13b4d11="" class="mx-2 flex flex-1 items-start font-bold">Ticketster</h2>
+  <router-link data-v-f13b4d11="" class="mx-4" to="/"><i data-v-f13b4d11="" class="fa-solid fa-house" style="color: rgb(255, 255, 255);"></i>Home</router-link>
+  <router-link data-v-f13b4d11="" class="mx-4" to="/admin"><i data-v-f13b4d11="" class="fa-solid fa-screwdriver-wrench" style="color: rgb(255, 255, 255);"></i>Admin</router-link>
+  <router-link data-v-f13b4d11="" class="mx-4 position:relative" to="/cart"><i data-v-f13b4d11="" class="fa-solid fa-cart-shopping" style="color: rgb(255, 255, 255);"></i>Cart <span data-v-f13b4d11="">0</span></router-link>
+</div>
+<router-view data-v-f13b4d11=""></router-view>"
+`;

@@ -83,7 +83,7 @@ export default defineComponent({
       isVip: false,
       description: "",
     });
-
+    // handle when admin create new ticket
     const handleSubmit = (e: Event) => {
       e.preventDefault();
       const temp: eventType = {
@@ -96,12 +96,13 @@ export default defineComponent({
       store.commit("addTicket", temp);
       router.push("/");
     };
-
+    // handle when admin delete a ticket
     const handleDeleteTicket = (idx: number) => {
       store.commit("removeTicket", idx);
     };
     return { handleSubmit, ticketData, handleDeleteTicket };
   },
+  // get all tickets
   computed: {
     ...mapGetters(["allTickets"]),
   },

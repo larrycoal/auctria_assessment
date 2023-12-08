@@ -25,12 +25,12 @@
           <span>{{ ticket.price }}cad</span
           ><span>Available:{{ ticket.count }}</span>
         </p>
-        <button v-if="ticket.isVip" v-on:click="handleAddToCart(ticket)">
+        <button class="add_to_cart" v-if="ticket.isVip" v-on:click="handleAddToCart(ticket)">
           <span class="triangle"></span>
           Vip Ticket
           <span class="triangle"></span>
         </button>
-        <button v-if="!ticket.isVip" v-on:click="handleAddToCart(ticket)">
+        <button class="add_to_cart" v-if="!ticket.isVip" v-on:click="handleAddToCart(ticket)">
           <span class="triangle"></span>Regular Ticket<span
             class="triangle"
           ></span>
@@ -45,13 +45,13 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-//import { useStore } from "vuex";
 import { mapGetters, useStore } from "vuex";
 import eventType from "../types/event";
 
 export default defineComponent({
   setup() {
     const store = useStore();
+    // handle when user add ticket to cart
     const handleAddToCart = (ticket: eventType) => {
       store.commit("addToCart", ticket);
     };

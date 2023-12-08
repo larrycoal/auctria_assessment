@@ -1,11 +1,81 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Home > should render correctly 1`] = `
-"<div data-v-f13b4d11="" class="flex p-2 text-xl text-center bg-slate-900 text-gray-50 nav">
-  <h2 data-v-f13b4d11="" class="mx-2 flex flex-1 items-start font-bold">Ticketster</h2>
-  <router-link data-v-f13b4d11="" class="mx-4" to="/"><i data-v-f13b4d11="" class="fa-solid fa-house" style="color: rgb(255, 255, 255);"></i>Home</router-link>
-  <router-link data-v-f13b4d11="" class="mx-4" to="/admin"><i data-v-f13b4d11="" class="fa-solid fa-screwdriver-wrench" style="color: rgb(255, 255, 255);"></i>Admin</router-link>
-  <router-link data-v-f13b4d11="" class="mx-4 position:relative" to="/cart"><i data-v-f13b4d11="" class="fa-solid fa-cart-shopping" style="color: rgb(255, 255, 255);"></i>Cart <span data-v-f13b4d11="">0</span></router-link>
+exports[`Admin page renders correctly 1`] = `
+"<div data-v-8684b5a5="" class="w-8/12 mx-auto bg-white my-4 p-4 admin_wrapper">
+  <h2 data-v-8684b5a5="" class="text-3xl text-center">Add New Ticket</h2>
+  <form data-v-8684b5a5="" class="flex flex-col gap-1 my-4 p-4">
+    <div data-v-8684b5a5=""><label data-v-8684b5a5="">Ticket Name</label><input data-v-8684b5a5="" type="text" placeholder="Enter ticket name" required=""></div>
+    <div data-v-8684b5a5=""><label data-v-8684b5a5="">Description</label><input data-v-8684b5a5="" type="text" placeholder="Enter ticket name" required=""></div>
+    <div data-v-8684b5a5=""><label data-v-8684b5a5="">Count</label><input data-v-8684b5a5="" type="number" placeholder="Enter number of ticket" required=""></div>
+    <div data-v-8684b5a5=""><label data-v-8684b5a5="">Price</label><input data-v-8684b5a5="" type="number" placeholder="Enter ticket price" required=""></div>
+    <div data-v-8684b5a5="" class="flex flex-row my-2"><input data-v-8684b5a5="" type="checkbox"><label data-v-8684b5a5="">Vip Ticket</label></div><button data-v-8684b5a5="" class="bg-slate-900 text-gray-50 p-2 rounded">Add Ticket</button>
+  </form>
 </div>
+<table data-v-8684b5a5="">
+  <tr data-v-8684b5a5="">
+    <th data-v-8684b5a5="">Name</th>
+    <th data-v-8684b5a5="">description</th>
+    <th data-v-8684b5a5="">price</th>
+    <th data-v-8684b5a5=""></th>
+  </tr>
+  <tr data-v-8684b5a5="">
+    <td data-v-8684b5a5="">Festival</td>
+    <td data-v-8684b5a5="">Get your ticket for the afro vibes festival happening in summer '24 in kitchener. you dont want to miss out on this festival</td>
+    <td data-v-8684b5a5="">50cad</td>
+    <td data-v-8684b5a5=""><i data-v-8684b5a5="" class="fa-solid fa-trash cursor-pointer"></i></td>
+  </tr>
+</table>"
+`;
+
+exports[`Application wrapper renders correctly 1`] = `
+"<header data-v-f13b4d11="" class="flex p-2 text-xl text-center bg-slate-900 text-gray-50 nav">
+  <h2 data-v-f13b4d11="" class="mx-2 flex flex-1 items-start font-bold">Ticketster</h2>
+  <nav data-v-f13b4d11="" class="desktop_nav">
+    <router-link data-v-f13b4d11="" class="mx-4" to="/"><i data-v-f13b4d11="" class="fa-solid fa-house" style="color: rgb(255, 255, 255);"></i>Home</router-link>
+    <router-link data-v-f13b4d11="" class="mx-4" to="/admin"><i data-v-f13b4d11="" class="fa-solid fa-screwdriver-wrench" style="color: rgb(255, 255, 255);"></i>Admin</router-link>
+    <router-link data-v-f13b4d11="" class="mx-4 position:relative" to="/cart"><i data-v-f13b4d11="" class="fa-solid fa-cart-shopping" style="color: rgb(255, 255, 255);"></i>Cart <span data-v-f13b4d11="">0</span></router-link>
+  </nav>
+  <div data-v-f13b4d11="" class="hamburger"><i data-v-f13b4d11="" class="fa-solid fa-bars" style="color: rgb(247, 247, 248);"></i></div>
+  <!--v-if-->
+</header>
 <router-view data-v-f13b4d11=""></router-view>"
+`;
+
+exports[`Cart page renders correctly 1`] = `
+"<h2 data-v-846bc44f="">Your Cart</h2>
+<table data-v-846bc44f="">
+  <tr data-v-846bc44f="">
+    <th data-v-846bc44f="">Item</th>
+    <th data-v-846bc44f="">Name</th>
+    <th data-v-846bc44f="">Description</th>
+    <th data-v-846bc44f="">Price</th>
+  </tr>
+</table>
+<div data-v-846bc44f="" class="cart_bottom">
+  <div data-v-846bc44f="" class="container">
+    <p data-v-846bc44f=""><span data-v-846bc44f="">Amount:</span><span data-v-846bc44f="">0cad</span></p>
+    <p data-v-846bc44f=""><span data-v-846bc44f="">HST:</span><span data-v-846bc44f="">10%</span></p>
+    <p data-v-846bc44f=""><span data-v-846bc44f="">Total:</span><span data-v-846bc44f="">0cad</span></p>
+  </div>
+</div>"
+`;
+
+exports[`Home page renders correctly 1`] = `
+"<div data-v-fdbf00eb="">
+  <div data-v-fdbf00eb="" class="hero">
+    <h2 data-v-fdbf00eb="">Welcome To Ticketster</h2>
+    <p data-v-fdbf00eb="">Your one stop shop to all your ticket needs</p>
+  </div>
+  <h2 data-v-fdbf00eb="" class="text-center text-4xl">Buy Tickets</h2>
+  <ul data-v-fdbf00eb="" class="tickets_wrapper">
+    <li data-v-fdbf00eb="" class="card">
+      <div data-v-fdbf00eb=""><img data-v-fdbf00eb="" src="https://res.cloudinary.com/dbdrtuscd/image/upload/v1701885193/Screenshot_2023-12-06_at_12.51.35_k2pgtu.png" alt="icon for a ticket"></div>
+      <!--v-if-->
+      <h3 data-v-fdbf00eb="">Festival</h3>
+      <p data-v-fdbf00eb="">Get your ticket for the afro vibes festival happening in summer '24 in kitchener. you dont want to miss out on this festival</p>
+      <p data-v-fdbf00eb="" class="sub"><span data-v-fdbf00eb="">50cad</span><span data-v-fdbf00eb="">Available:100</span></p>
+      <!--v-if--><button data-v-fdbf00eb="" class="add_to_cart"><span data-v-fdbf00eb="" class="triangle"></span>Regular Ticket<span data-v-fdbf00eb="" class="triangle"></span></button>
+    </li>
+  </ul>
+</div>"
 `;
